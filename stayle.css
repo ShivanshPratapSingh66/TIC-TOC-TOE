@@ -1,0 +1,150 @@
+
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Welcome Screen */
+
+#welcome-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    animation: fadeOut 3s forwards;
+}
+
+#welcome-screen h1{
+    color: white;
+    font-size: 40px;
+    animation: zoomIn 1.5s ease;
+}
+
+/* Text animation */
+@keyframes zoomIn{
+    from{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Screen disappears */
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.container{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.container-min {
+    padding: 40px 10px;
+    margin-top: 150px;
+}
+.row {
+    display: flex;
+}
+.block {
+    border: 2px solid;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.block:hover {
+  background: #4b5563;
+}
+
+#status {
+    display: flex;
+    margin-top: 20px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #10b981;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+  background: #059669;
+}
+
+body{
+    background: #0f172a;
+    color: #38bdf8;
+}
+
+.block{
+    background: #1e293b;
+    border: 2px solid #38bdf8;
+}
+
+.block:hover{
+    background: #334155;
+}
+
+body{
+    background: #111827;
+    color: white;
+}
+
+.block{
+    background: #1f2937;
+}
+
+.block:hover{
+    background: #374151;
+}
